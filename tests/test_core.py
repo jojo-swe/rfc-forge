@@ -1,5 +1,7 @@
 import pytest
+
 from rfc_forge import render_rfc
+
 
 def test_render_contains_required_sections() -> None:
     assert "## Decision" in render_rfc("Edge design","John","Current design is fragile","Use dual uplinks")
